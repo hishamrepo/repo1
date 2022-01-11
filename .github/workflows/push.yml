@@ -1,6 +1,6 @@
 ## Workflow defines what we want to call a set of actions.
 
-## For every new push check if the changes can be applied to kubernetes ## using the action called: kubectl dryrun
+## For every new push check if the changes can be applied to kubernetes ## using the action cdalled: kubectl dryrun
 workflow "after a push check if they apply to kubernetes" {
   on = "push"
   resolves = ["kubectl dryrun"]
