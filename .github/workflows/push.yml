@@ -15,11 +15,11 @@ workflow "on merge to master deploy on kubernetes" {
 ## This is the action that checks if the push can be applied to kubernetes
 action "kubectl dryrun" {
   uses = "./.github/actions/dryrun"
-  secrets = ["KUBECONFIG"]
+  secrets = ["KUBE_CONFIG_DATA"]
 }
 
 ## This is the action that applies the change to kubernetes
 action "kubectl deploy" {
   uses = "./.github/actions/deploy"
-  secrets = ["KUBECONFIG"]
+  secrets = ["KUBE_CONFIG_DATA"]
 }
