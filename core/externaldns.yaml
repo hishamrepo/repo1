@@ -6,7 +6,7 @@ metadata:
   # Otherwise, you may safely omit it.
   annotations:
     # Substitute your account ID and IAM service role name below. #Change-1: Replace with your IAM ARN Role for extern-dns
-    eks.amazonaws.com/role-arn: arn:aws:iam::914106918725:role/eksctl-MyCluster-addon-iamserviceaccount-def-Role1-1S7HNN4LTAA2X
+    eks.amazonaws.com/role-arn: arn:aws:iam::914106918725:role/eksctl-ClusterEu-addon-iamserviceaccount-def-Role1-FGPPF3VQ5C1Q
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRole
